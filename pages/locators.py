@@ -8,9 +8,9 @@ class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
-    LOGIN_EMAIL = (By.CSS_SELECTOR, "#id_login-username")
-    LOGIN_PASSWORD = (By.CSS_SELECTOR, "#id_login-password")
-    
-    REG_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
-    REG_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password1")
-    REG_PASSWORD_REPEAT = (By.CSS_SELECTOR, "#id_registration-password2")
+class ProductPageLocators:
+    PRODUCT_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
+    PRODUCT_NAME_ADDED = (By.CSS_SELECTOR, ".alert:nth-child(1) .alertinner strong")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
+    PRODUCT_PRICE_ADDED = (By.CSS_SELECTOR, ".alert-safe:nth-child(3) .alertinner strong")
