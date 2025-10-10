@@ -16,3 +16,7 @@ class ProductPageLocators:
     PRODUCT_NAME_ADDED = (By.CSS_SELECTOR, ".alert:nth-child(1) .alertinner strong")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     PRODUCT_PRICE_ADDED = (By.CSS_SELECTOR, ".alert-safe:nth-child(3) .alertinner strong")
+
+class BasketPageLocators:
+    BASKET_BUTTON_HEADER = (By.CSS_SELECTOR, ".basket-mini .btn-group .btn.btn-default:nth-child(1)")
+    BASKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner")
