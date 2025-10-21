@@ -1,8 +1,6 @@
 import math
-
 import pytest
 from selenium import webdriver
-#from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.support.ui import WebDriverWait
