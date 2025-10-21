@@ -11,8 +11,6 @@ class BasketPage(BasePage):
 
     def is_basket_empty(self):
         inner = self.is_not_element_present(*BasketPageLocators.BASKET_IS_EMPTY)
-        inner_text = self.browser.find_element(*BasketPageLocators.BASKET_IS_EMPTY)
-        print(f"Текст корзины: '{inner_text.text}'")
-        assert not inner, "В корзине что-то есть"
+        assert inner, "В корзине что-то есть"
 
 
