@@ -24,4 +24,4 @@ class ProductPageLocators:
 
 class BasketPageLocators:
     BASKET_BUTTON_HEADER = (By.CSS_SELECTOR, ".basket-mini .btn-group .btn.btn-default:nth-child(1)")
-    BASKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner")
+    BASKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner .row")
