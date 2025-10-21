@@ -1,6 +1,5 @@
 import time
 from multiprocessing.reduction import register
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -47,7 +46,6 @@ class TestGuestAddToBasketFromProductPage:
                                       "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer9"])
     @pytest.mark.need_review
     def test_guest_can_add_product_to_basket(self, browser, link):
-        #link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
         page = ProductPage(browser, link)
         page.open()
         page.product_button_should_be_click()
